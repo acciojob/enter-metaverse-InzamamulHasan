@@ -2,8 +2,8 @@
 let enterBtn=document.getElementById("enterBtn");
 let status=document.getElementById("status");
 enterBtn.addEventListener("click",()=>{
-	let h1=document.createElement("h1");
+	/*let h1=document.createElement("h1");
 	h1.innerText="Enter the Metaverse";
-	status.insertAdjacentElement("afterend",h1);
-	status.remove()
+	status.insertAdjacentElement("afterend",h1);*/
+	status.outerHTML=`<h1 id="status">Enter the Metaverse</h1>`
 })
